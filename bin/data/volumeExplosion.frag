@@ -149,7 +149,7 @@ float4 shade(float3 p, float displace)
 	//return float4(float3(displace), 1);
 	//return float4(dfNormal(p)*float3(0.5)+float3(0.5), 1);
 	//return float4(diffuse);
-	//return gradient(displace);
+//    return gradient(displace);
 	return c;
 }
 
@@ -239,7 +239,7 @@ void main(void)
     if (hit) {
 		// shade
    		col = shade(hitPos, displace);	// opaque version
-		//col = rayMarch(hitPos, rd*_StepSize, hitPos);	// volume render
+//		col = rayMarch(hitPos, rd*_StepSize, hitPos);	// volume render
     }
 
     gl_FragColor = col;

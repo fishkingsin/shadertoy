@@ -22,4 +22,8 @@ class testApp : public ofBaseApp{
     ofVideoGrabber grabber;
     ofDirectory dir;
     int nFile;
+    string currentPath;
+    	ofVboMesh mainMesh;
+    	ofFbo	fbo;
+    ofEasyCam cam;
 };
