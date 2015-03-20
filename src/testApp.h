@@ -22,6 +22,7 @@ class testApp : public ofBaseApp{
     ofVideoGrabber grabber;
     ofDirectory dir;
     int nFile;
+    int currnetPathIndex;
     string currentPath;
     	ofVboMesh mainMesh;
     	ofFbo	fbo;
